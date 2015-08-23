@@ -13,9 +13,10 @@
 
         <Label VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,110,74,0">设置端口：</Label>
         <TextBox x:Name="portTextBox"  Width="60" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,105,14,0" Padding="5" TextAlignment="Left" FontSize="15">8080</TextBox>
-        <TextBox x:Name="receiveTextBox" BorderBrush="Azure" Width="400" Height="250" Background="WhiteSmoke" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,90,0,0"
+
+        <TextBox x:Name="receiveTextBox" BorderBrush="Gray" Width="400" Height="250" Background="WhiteSmoke" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,90,0,0"
                  FontSize="14" Foreground="Black" Padding="5,5,5,5" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"
-                 AcceptsReturn="True" IsReadOnly="True" Cursor="IBeam" />
+                 AcceptsReturn="True" IsReadOnly="True" Cursor="IBeam" BorderThickness="1.5"/>
 
         <Button x:Name="openServerButton" Content="打开服务器" HorizontalAlignment="Right" Margin="0,156,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="openServerButton_Click"/>
         <Button x:Name="clearButton" Content="清空内容" HorizontalAlignment="Right" Margin="0,210,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="clearButton_Click"/>

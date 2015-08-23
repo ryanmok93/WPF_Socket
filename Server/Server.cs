@@ -12,6 +12,7 @@ namespace Server_socket
         private String receiveStringMessage = null;
         private String sendStringMessage = null;
         private static Socket serverSocket = null;
+
         private int myPort=8080; //Set default socket port       
         IPAddress ip = IPAddress.Parse("127.0.0.1");
         private static bool statue = false;
@@ -22,19 +23,32 @@ namespace Server_socket
             serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             serverSocket.Bind(new IPEndPoint(ip, myPort));
             serverSocket.Listen(32);
-            
+            Thread myThread = new Thread(ListenClientConnect);
+            myThread.Start();
+
             statue = true;
             return true;
         }
 
-        public void sendMessage()
+        public static void ListenClientConnect()
         {
 
+            
+        }
+
+        public void sendMessageFromServer()
+        {
+
+        }
+        public int getMessageFromClient()
+        {
+            return 0;
         }
 
         public bool StopServer()
         {
             serverSocket.Close();
+
             statue = false;
             return true;
         }
@@ -47,6 +61,11 @@ namespace Server_socket
         public void setPort(int port)
         {
             this.myPort = port;
+        }
+
+        public void setSendStringMessage(String str)
+        {
+            this.sendStringMessage = str;
         }
         public bool socketStatus()
         {

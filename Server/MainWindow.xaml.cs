@@ -38,12 +38,32 @@ namespace Server
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
+            if(myServerSocket.socketStatus() == false)
+            {
+                MessageBox.Show("请先打开服务器", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if(sendTextBox.Text=="")
+            {
+                MessageBox.Show("请输入需要发送的内容", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            myServerSocket.setSendStringMessage(sendTextBox.Text);
 
+            receiveTextBox.AppendText(System.DateTime.Now.ToString()+": " +sendTextBox.Text+"\n");
+
+            this.receiveTextBox.ScrollToEnd();
         }
 
         private void openServerButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            int tmpPort;
+            Int32.TryParse(portTextBox.Text, out tmpPort);
+            if(tmpPort >65536 || tmpPort < 1024)
+            {
+                MessageBox.Show("请输入正确的端口号", "Warning",MessageBoxButton.OK,MessageBoxImage.Error);
+                return;
+            }
             myServerSocket.setPort(Convert.ToInt32(portTextBox.Text));
             if (myServerSocket.StartServer() == true)
             {
@@ -55,14 +75,14 @@ namespace Server
             }
             else
             {
-                
+                receiveTextBox.AppendText("打开服务器失败");
             }
 
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
-            receiveTextBox.Text = "";
+            receiveTextBox.Clear();
         }
 
         private void closeServerButton_Click(object sender, RoutedEventArgs e)
