@@ -12,3 +12,6 @@ C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Deb
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.exe
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.pdb
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\bin\Debug\Client.exe.config
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.exe
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.pdb
