@@ -1,1 +1,0 @@
-c:\users\ryan\documents\visual studio 2015\Projects\Socket_CSharp\Socket_CSharp\bin\Debug\Socket_CSharp.exe.config
