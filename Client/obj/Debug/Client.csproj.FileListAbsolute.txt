@@ -1,31 +1,14 @@
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\bin\Debug\Client.exe.config
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\bin\Debug\Client.exe
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\bin\Debug\Client.pdb
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\MainWindow.g.cs
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\App.g.cs
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client_MarkupCompile.cache
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client_MarkupCompile.lref
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\MainWindow.baml
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.g.resources
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.Properties.Resources.resources
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.csproj.GenerateResource.Cache
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.exe
-C:\Users\Ryan\Documents\Visual Studio 2015\Projects\Socket_CSharp\Client\obj\Debug\Client.pdb
 C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\bin\Debug\Client.exe.config
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\bin\Debug\Client.exe
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\bin\Debug\Client.pdb
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\MainWindow.g.cs
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\App.g.cs
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client_MarkupCompile.lref
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\MainWindow.baml
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.g.resources
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.exe
 C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.pdb
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.exe.config
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.exe
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.pdb
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.exe
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.pdb
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\MainWindow.g.cs
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\App.g.cs
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client_MarkupCompile.cache
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client_MarkupCompile.lref
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\MainWindow.baml
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.g.resources
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.Properties.Resources.resources
-C:\Users\WSNS\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.csproj.GenerateResource.Cache
