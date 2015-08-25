@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Server"
         mc:Ignorable="d"
-        Title="Socket通信 Server端" Height="400" Width="600"
+        Title="Socket通信 （Server端）" Height="400" Width="600"
         ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="sendTextBox" Width="400" Height="30" Margin="30,30,0,0" TextAlignment="Left" Padding="5" VerticalAlignment="Top" HorizontalAlignment="Left"/>
