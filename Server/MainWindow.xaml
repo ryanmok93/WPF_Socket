@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Server"
         mc:Ignorable="d"
-        Title="Socket通信 （Server端）" Height="400" Width="600"
+        Title="Socket通信-服务器端" Height="400" Width="600"
         ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="sendTextBox" Width="400" Height="30" Margin="30,30,0,0" TextAlignment="Left" Padding="5" VerticalAlignment="Top" HorizontalAlignment="Left"/>
@@ -19,7 +19,7 @@
                  AcceptsReturn="True" IsReadOnly="True" Cursor="IBeam" BorderThickness="1.5"/>
 
         <Button x:Name="openServerButton" Content="打开服务器" HorizontalAlignment="Right" Margin="0,156,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="openServerButton_Click"/>
-        <Button x:Name="clearButton" Content="清空内容" HorizontalAlignment="Right" Margin="0,210,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="clearButton_Click"/>
+        <Button x:Name="clearButton" Content="清空" HorizontalAlignment="Right" Margin="0,210,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="clearButton_Click"/>
         <Button x:Name="closeServerButton" Content="关闭服务器" HorizontalAlignment="Right" Margin="0,262,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="closeServerButton_Click"/>
         <Button x:Name="exitButton" Content="退出(_Q)" HorizontalAlignment="Right" Margin="0,315,36,0" VerticalAlignment="Top" Width="95" Height="25" Click="exitButton_Click"/>
 

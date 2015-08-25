@@ -24,5 +24,25 @@ namespace Client
         {
             InitializeComponent();
         }
+
+        private void connectToServerButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void clearButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void stopButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
