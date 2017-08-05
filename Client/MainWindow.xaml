@@ -8,12 +8,12 @@
         Title="Socket通信-客户端" Height="420" Width="600" ResizeMode="NoResize">
     <Grid>
         <Label Margin="30,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15">IP地址：</Label>
-        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Height="30" Margin="100,20,0,0" Padding="7,5,0,0" FontSize="15" >172.0.0.1</TextBox>
+        <TextBox Name="textBoxIPAddress" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Height="30" Margin="100,20,0,0" Padding="7,5,0,0" FontSize="15" >127.0.0.1</TextBox>
         <Label VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Margin="264,21,0,0">端口号：</Label>
-        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left"  Width="70"  Height="30" Margin="338,20,0,0" FontSize="15" Padding="7,5,0,0">8080</TextBox>
+        <TextBox Name="textBoxPort" VerticalAlignment="Top" HorizontalAlignment="Left"  Width="70"  Height="30" Margin="338,20,0,0" FontSize="15" Padding="7,5,0,0">8080</TextBox>
         <Button x:Name="connectToServerButton" Content="连接服务器" HorizontalAlignment="Left" Margin="435,20,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="connectToServerButton_Click"/>
-        <RichTextBox x:Name="sendRichTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Width="372" Margin="36,64,0,0" FontSize="15" Padding="4,5,0,0"></RichTextBox>
-        <Button x:Name="sendButton" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="30" Content="发送" Margin="435,64,0,0"/>
+        <RichTextBox Name="sendRichTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Width="372" Margin="36,64,0,0" FontSize="15" Padding="4,5,0,0"></RichTextBox>
+        <Button x:Name="sendButton" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Height="30" Content="发送" Margin="435,64,0,0" Click="sendButton_Click"/>
         <RichTextBox x:Name="receiveRichTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Width="372" Height="240" Margin="36,110,0,0" Padding="4,5,0,0" FontSize="15" IsReadOnly="True" Background="WhiteSmoke"></RichTextBox>
         <Button x:Name="clearButton" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Width="120" Margin="435,238,0,0" Click="clearButton_Click">清空</Button>
         <Button x:Name="stopButton" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Width="120" Margin="435,279,0,0" Click="stopButton_Click">停止</Button>
