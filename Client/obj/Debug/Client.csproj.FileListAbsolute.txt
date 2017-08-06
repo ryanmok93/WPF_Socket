@@ -12,10 +12,8 @@ C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.Properties.Res
 C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.exe
 C:\Users\Ryan\Documents\GitHub\Socket_WPF\Client\obj\Debug\Client.pdb
-C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.exe.config
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.exe
-C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.pdb
-C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.exe.config
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\MainWindow.g.cs
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\App.g.cs
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client_MarkupCompile.cache
@@ -26,3 +24,5 @@ C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.Properties.Res
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.exe
 C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.pdb
+C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\bin\Debug\Client.pdb
+C:\Users\Ryan\Documents\GitHub\WPF_Socket\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache

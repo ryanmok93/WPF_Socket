@@ -16,6 +16,8 @@ using System.Windows.Shapes;
 using System.Net.Sockets;
 using System.Net;
 
+using System.Threading;
+
 namespace Client
 {
     /// <summary>
@@ -26,9 +28,15 @@ namespace Client
         TcpSocket tcpSocket = null;
         IPAddress ipaddress = null;
 
+        Thread receiveMessageThread = null;
+
+        //声明委托
+        public delegate void UpdateTextCallBack(String msg);
+
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void connectToServerButton_Click(object sender, RoutedEventArgs e)
@@ -56,17 +64,20 @@ namespace Client
                 bool succeed = tcpSocket.Connect(stringIPAddress, 8080);
                 if (!succeed)
                 {
-                    receiveRichTextBox.AppendText("连接失败\n");
+                    this.UpdateTextBox("> 连接失败");
                     tcpSocket = null;
                 }
                 else
                 {
-                    receiveRichTextBox.AppendText("已连接：" + stringIPAddress + "\r\n");
+                    this.UpdateTextBox("> 已连接：" + stringIPAddress);
+
+                    //    receiveMessageThread = new Thread(handleReceiveThread);
+                    //    receiveMessageThread.Start();
+
+                    receiveMessageThread = new Thread(new ThreadStart(UpdateTextBoxThread));
+                    receiveMessageThread.Start();
                 }
-
-
             }
-
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
@@ -78,9 +89,17 @@ namespace Client
         {
             if (tcpSocket != null)
             {
+                
                 tcpSocket.closeConnect();
+
+                if (receiveMessageThread.IsAlive)
+                {
+                    receiveMessageThread.Abort();
+
+                }
+
                 tcpSocket = null;
-                receiveRichTextBox.AppendText("已关闭连接\r\n");
+                this.UpdateTextBox("> 已关闭连接");
             }
 
         }
@@ -90,8 +109,12 @@ namespace Client
             if (tcpSocket != null && tcpSocket.getStatus())
             {
                 tcpSocket.closeConnect();
-            }
+                if (receiveMessageThread.IsAlive)
+                {
+                    receiveMessageThread.Abort();
 
+                }
+            }
             this.Close();
         }
 
@@ -104,21 +127,50 @@ namespace Client
             }
             if (!tcpSocket.getStatus())
             {
-                receiveRichTextBox.AppendText("服务器连接异常\r\n");
+                this.UpdateTextBox("!> 服务器连接异常");
                 return;
             }
             String sendMsg = StringFromTextBox(sendRichTextBox);
 
             tcpSocket.sendMessage(sendMsg);
-            
-            
+            this.UpdateTextBox("# 发送消息："+sendMsg);
+
         }
 
-        static string StringFromTextBox(RichTextBox rtb)
+        //从RichTextBox获取String内容
+        static String StringFromTextBox(RichTextBox rtb)
         {
             TextRange textRange = new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd);
+            return textRange.Text.Replace("\r\n", "");
+        }
 
-            return textRange.Text;
+        //接收消息 更新文本框线程
+        private void UpdateTextBoxThread()
+        {
+            while (true)
+            {
+                Thread.Sleep(1000);
+                receiveRichTextBox.Dispatcher.Invoke(
+                    new UpdateTextCallBack(this.HandleReceiveMsgTextBox),
+                    new object[] { tcpSocket.receiveMessage() }
+                    );
+            }
+
+        }
+
+        //处理接收到的消息
+        private void HandleReceiveMsgTextBox(String msg)
+        {
+            this.UpdateTextBox("# 接收服务器："+msg);
+        }
+
+        //更新接收文本框
+        public void UpdateTextBox(String msg)
+        {
+            receiveRichTextBox.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
+            receiveRichTextBox.ScrollToEnd();
+            receiveRichTextBox.AppendText(msg + "\n");
+            receiveRichTextBox.Focus();
         }
     }
 }

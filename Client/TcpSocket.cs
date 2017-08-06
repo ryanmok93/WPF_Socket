@@ -12,12 +12,14 @@ namespace Client
     class TcpSocket
     {
         TcpClient client = null;
+        NetworkStream stream = null;
 
         public bool Connect(String server,Int32 port)
         {
             try
             {
-               client = new TcpClient(server, port);
+                client = new TcpClient(server, port);
+                stream = client.GetStream();
                 return true;
             }
             catch(ArgumentNullException e){
@@ -34,19 +36,31 @@ namespace Client
         public void sendMessage(String message)
         {
             Byte[] data = System.Text.Encoding.ASCII.GetBytes(message);
-
-            NetworkStream stream = client.GetStream();
-
             stream.Write(data, 0, data.Length);
         }
 
-        public void receiveMessage()
+        public String receiveMessage()
         {
+            String responsData;
+            Byte[] data = new Byte[256];
+            Int32 bytes;
+            try
+            {
+                bytes = stream.Read(data, 0, data.Length);
+            }
+            catch(Exception e)
+            {
+                System.Windows.MessageBox.Show(e.ToString());
+                return null;
+            }
+            responsData = Encoding.ASCII.GetString(data, 0, bytes);
+            return responsData;
 
         }
 
         public void closeConnect()
         {
+            stream.Close();
             client.Close();
         }
 
