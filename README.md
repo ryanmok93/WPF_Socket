@@ -1,3 +1,3 @@
 # WPF_Socket
 
-A example for socket communication in WPF.
+A Demo for socket communication in WPF.
